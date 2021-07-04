@@ -51,6 +51,10 @@ function Filters() {
                                 border: 'none',
                                 padding: '0px'
                             },
+                            highlightOption:{
+                                color: '#1071ff',
+                                background: 'transparent'
+                            }
                         }}
 
                     />
@@ -78,6 +82,10 @@ function Filters() {
                                 border: 'none',
                                 padding: '0px'
                             },
+                            highlightOption:{
+                                color: '#1071ff',
+                                background: 'transparent'
+                            }
                         }}
                     />
                 </Form.Group>
