@@ -36,7 +36,7 @@ function Filters() {
                 <Form.Group className="form__group form__group_select" controlId="programSelect">
                     <Form.Label className="form__label">Программа</Form.Label>
                     <div className="form__icon"><Image.DropDown /></div>
-                    <Multiselect 
+                    <Multiselect
                         displayValue="key"
                         onRemove={function noRefCheck() { }}
                         onSelect={function noRefCheck() { }}
@@ -48,19 +48,17 @@ function Filters() {
                         selectionLimit={1}
                         style={{
                             searchWrapper: {
-                              border: 'none',
-                            },
-                            searchBox: {
                                 border: 'none',
-                              }
-                          }}
-                        
+                                padding: '0px'
+                            },
+                        }}
+
                     />
                 </Form.Group>
                 <Form.Group className="form__group form__group_select" controlId="programSelect">
                     <Form.Label className="form__label">Период</Form.Label>
                     <div className="form__icon"><Image.DropDown /></div>
-                    <DatePicker dateFormat='P' selected={startDate} onChange={(date) => setStartDate(date)}  />
+                    <DatePicker dateFormat='P' selected={startDate} onChange={(date) => setStartDate(date)} />
                 </Form.Group>
                 <Form.Group className="form__group form__group_select" controlId="programSelect">
                     <Form.Label className="form__label">Статус</Form.Label>
@@ -75,6 +73,12 @@ function Filters() {
                         emptyRecordMsg='Выбраны все варианты'
                         hidePlaceholder={true}
                         selectionLimit={1}
+                        style={{
+                            searchWrapper: {
+                                border: 'none',
+                                padding: '0px'
+                            },
+                        }}
                     />
                 </Form.Group>
             </Form>
