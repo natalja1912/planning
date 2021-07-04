@@ -49,7 +49,10 @@ function Filters() {
                         style={{
                             searchWrapper: {
                               border: 'none',
-                            }
+                            },
+                            searchBox: {
+                                border: 'none',
+                              }
                           }}
                         
                     />
