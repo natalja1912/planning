@@ -3,9 +3,9 @@ import "./Sidebar.scss";
 
 const Sidebar = () => {
     return (
-        <div className="sidebar">
+        <button className="sidebar">
         <Image.Sidebar />
-        </div>
+        </button>
     )
 }
 

@@ -16,10 +16,10 @@ function Header() {
         <div className='header__icon'><Image.Planning /></div>
         <h1 className='header__heading'>Планирование</h1>
       </div>
-      <div className='header__plan-group'>
+      <button className='header__plan-group'>
         <Image.Plus />
         <button className="header__plan-btn">Запланировать</button>
-      </div>
+      </button>
     </div>
   );
 }
