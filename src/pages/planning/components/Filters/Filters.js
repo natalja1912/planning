@@ -36,7 +36,7 @@ function Filters() {
                 <Form.Group className="form__group form__group_select" controlId="programSelect">
                     <Form.Label className="form__label">Программа</Form.Label>
                     <div className="form__icon"><Image.DropDown /></div>
-                    <Multiselect
+                    <Multiselect 
                         displayValue="key"
                         onRemove={function noRefCheck() { }}
                         onSelect={function noRefCheck() { }}
@@ -46,6 +46,12 @@ function Filters() {
                         emptyRecordMsg='Выбраны все варианты'
                         hidePlaceholder={true}
                         selectionLimit={1}
+                        style={{
+                            searchWrapper: {
+                              border: 'none',
+                            }
+                          }}
+                        
                     />
                 </Form.Group>
                 <Form.Group className="form__group form__group_select" controlId="programSelect">
