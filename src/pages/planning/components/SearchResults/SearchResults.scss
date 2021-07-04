@@ -7,6 +7,10 @@
   &__btn-group {
     display: flex;
     align-items: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
   }
 
   &__btn-group_first {
@@ -17,8 +21,7 @@
     display: flex;
     align-items: center;
     padding: 0;
-    border: none;
-    background-color: transparent;
+    margin: 0;
     @include medium-text(12px, 1.33);
 
     &_blue{

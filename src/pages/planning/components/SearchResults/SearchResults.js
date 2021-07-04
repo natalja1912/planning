@@ -9,14 +9,14 @@ function SearchResults() {
     return (
         <section className="results">
             <p className="results__text">{RESULTSNUMBER} сессии</p>
-            <div className="results__btn-group results__btn-group_first">
+            <button className="results__btn-group results__btn-group_first">
                 <Image.Scale />
-                <button className="results__btn results__btn_blue">Настроить фильтр</button>
-            </div>
-            <div className="results__btn-group">
+                <p className="results__btn results__btn_blue">Настроить фильтр</p>
+            </button>
+            <button className="results__btn-group">
                 <Image.CloseButton />
-                <button className="results__btn results__btn_grey">Сбросить</button>
-            </div>
+                <p className="results__btn results__btn_grey">Сбросить</p>
+            </button>
         </section>
     );
 }
