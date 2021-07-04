@@ -47,7 +47,7 @@ function Filters() {
                         hidePlaceholder={true}
                         selectionLimit={1}
                         style={{
-                            searchWrapper: {
+                            searchBox: {
                                 border: 'none',
                                 padding: '0px'
                             },
@@ -74,7 +74,7 @@ function Filters() {
                         hidePlaceholder={true}
                         selectionLimit={1}
                         style={{
-                            searchWrapper: {
+                            searchBox: {
                                 border: 'none',
                                 padding: '0px'
                             },
