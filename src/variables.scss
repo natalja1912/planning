@@ -1,0 +1,23 @@
+$colorTextGrey: rgba(0, 0, 0, 0.54);
+$colorTextBlack: rgba(0, 0, 0, 0.87);
+
+@mixin regular-text($size, $line-height) {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin medium-text($size, $line-height) {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin bold-text($size, $line-height) {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: $size;
+  line-height: $line-height;
+}

@@ -1,0 +1,54 @@
+@import "../../../../variables.scss";
+
+.table {
+  margin-top: 58px;
+  position: relative;
+  right: 8px;
+
+  &__row {
+    display: grid;
+    grid-template-columns: 110px 576px 136px 132px 200px;
+  }
+
+  &__heading {
+    padding: 0;
+    margin: 0;
+    padding: 8px 8px;
+    @include regular-text(10px, 1.2);
+    color: $colorTextGrey;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .table__row {
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .table {
+    margin-top: 45px;
+
+    &__heading:nth-child(4n) {
+      display: none;
+    }
+
+    &__row {
+      grid-template-columns: 3fr 4fr 40px 2fr;
+    }
+
+    &__heading{
+      padding: 0 8px;
+      margin-bottom: 20px;
+      white-space: nowrap; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

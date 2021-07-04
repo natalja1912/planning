@@ -1,0 +1,49 @@
+@import "../../../../variables.scss";
+
+.results {
+  margin-top: 36px;
+  display: flex;
+
+  &__btn-group {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn-group_first {
+    margin: 0 41px 0 90px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    @include medium-text(12px, 1.33);
+
+    &_blue{
+        color: #1071FF;
+        margin-left: 10px;
+    }
+
+    &_grey{
+        color: $colorTextGrey;
+        margin-left: 12px; 
+    }
+  }
+
+  &__text {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    @include regular-text(12px, 1.33);
+    color: $colorTextGrey;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .results {
+    display: none;
+  }
+
+}

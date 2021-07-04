@@ -1,0 +1,88 @@
+@import "../../../../variables.scss";
+
+.breadscrumb {
+  @include regular-text(12px, 1.33);
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $colorTextGrey;
+  }
+  &__divider {
+    margin: 0;
+    margin: 0 10px;
+    color: $colorTextGrey;
+  }
+}
+
+.header{
+  margin: 80px 0 38px;
+
+  &__heading{
+    margin: 0;
+    margin-left: 15px;
+    @include bold-text(38px, 1.05);
+    color: $colorTextBlack;
+  }
+
+  &__text-group{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__plan-group{
+    position: absolute;
+    top: 24px;
+    right: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+
+  &__plan-btn{
+    margin: 0;
+    margin-left: 8px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    @include medium-text(12px, 1.33);
+    color: #1071FF;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .breadscrumb {
+    display: none;
+  }
+
+  .header{
+    margin: 0 0 21px;
+
+    &__heading{
+      width: 100%;
+      text-align: center;
+      @include bold-text(14px, 1.29);
+    }
+
+    &__icon{
+      display: none;
+    }
+
+    &__plan-group{
+      top: 20px;
+      right: 16px;
+    }
+
+    &__plan-btn{
+      display: none;
+    }
+  }
+}
+

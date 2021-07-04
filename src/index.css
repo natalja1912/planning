@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  src: local("Montserrat"),
+    url(../src/vendor/fonts/Montserrat-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  src: local("Montserrat"),
+    url(../src/vendor/fonts/Montserrat-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: local("Montserrat"),
+    url(../src/vendor/fonts/Montserrat-SemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: local("Montserrat"),
+    url(../src/vendor/fonts/Montserrat-SemiBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: bold;
+  src: local("Montserrat"),
+    url(../src/vendor/fonts/Montserrat-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: bold;
+  src: local("Montserrat"),
+    url(../src/vendor/fonts/Montserrat-Bold.woff2) format("woff2");
+}
