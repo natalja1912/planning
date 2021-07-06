@@ -63,29 +63,6 @@ label {
   max-width: 200px;
 }
 
-.multiSelectContainer ul {
-  border: none;
-  border-radius: 0px;
-  padding: 16px 0;
-  list-style: none;
-}
-
-
-
-.highlightOption {
-  color: #1071ff;
-  background: transparent;
-}
-
-.multiSelectContainer li:hover {
-  background: rgba(0, 0, 0, 0.05);
-  color: $colorTextBlack;
-}
-
-.multiSelectContainer li {
-  padding: 10px 16px;
-  @include regular-text(12px, 1.33);
-}
 
 .react-datepicker__input-container {
   @include regular-text(12px, 1.33);

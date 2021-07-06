@@ -61,7 +61,8 @@ const customStyles = {
     }),
     valueContainer: (provided, state) => ({
         ...provided,
-        padding: 0
+        padding: 0,
+        borderRadius: 24
     }),
     indicatorSeparator: (provided, state) => ({
         ...provided,
