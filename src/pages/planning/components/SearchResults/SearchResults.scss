@@ -11,6 +11,11 @@
     margin: 0;
     border: none;
     background-color: transparent;
+    transition: all 0.4s;
+  }
+
+  &__btn-group:hover{
+    opacity: 0.8;
   }
 
   &__btn-group_first {

@@ -49,44 +49,6 @@ label {
   margin-bottom: 0;
 }
 
-.chip {
-  display: flex;
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 24px;
-  color: rgba(0, 0, 0, 0.54);
-}
-
-.multiselectContainer {
-  @include regular-text(12px, 1.33);
-}
-
-.searchBox {
-  padding: 0;
-  border: none;
-  @include regular-text(12px, 1.33);
-}
-
-.searchBox::placeholder {
-  color: $colorTextBlack;
-}
-
-.search-wrapper {
-  padding: 0;
-  max-width: 166px;
-  overflow: hidden;
-  border: none;
-  display: flex;
-  color: $colorTextBlack;
-}
-
-.searchWrapper{
-  border: none;
-}
-
-.custom-close {
-  margin-left: 5px;
-}
-
 .form__icon {
   position: absolute;
   top: 55%;

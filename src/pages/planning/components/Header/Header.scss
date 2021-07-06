@@ -13,7 +13,14 @@
   &__link {
     text-decoration: none;
     color: $colorTextGrey;
+    transition: all 0.4s;
   }
+
+  &__link:hover {
+    text-decoration: none;
+    color: $colorTextBlack;
+  }
+
   &__divider {
     margin: 0;
     margin: 0 10px;
@@ -58,6 +65,11 @@
     background-color: transparent;
     @include medium-text(12px, 1.33);
     color: #1071FF;
+    transition: all 0.4s;
+  }
+
+  &__plan-btn:hover{
+    opacity: 0.8;
   }
 }
 
