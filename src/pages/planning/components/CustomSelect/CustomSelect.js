@@ -41,8 +41,8 @@ const customStyles = {
     container: (provided, state) => ({
         ...provided,
         width: '100%',
+        padding: 0,
         fontSize: 12,
-        lineHeight: 1.33,
         fontFamily: "Montserrat",
         fontWeight: 500,
         fontColor: "#000000",
@@ -57,7 +57,8 @@ const customStyles = {
         ...provided,
         border: 'none',
         padding: 0,
-        minHeight: 0
+        minHeight: 20.33,
+        height: 20.33
     }),
     valueContainer: (provided, state) => ({
         ...provided,
@@ -67,6 +68,10 @@ const customStyles = {
     indicatorSeparator: (provided, state) => ({
         ...provided,
         display: 'none'
+    }),
+    indicatorContainer: (provided, state) => ({
+        ...provided,
+        padding: 0
     }),
     option: (provided, state) => ({
         ...provided,

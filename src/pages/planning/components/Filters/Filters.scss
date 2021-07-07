@@ -56,6 +56,11 @@ label {
   transform: translateY(-50%);
 }
 
+.form-control:focus {
+  border-color: #FFFFFF;
+  box-shadow: none;
+}
+
 .optionContainer {
   margin: 0;
   padding: 0;
