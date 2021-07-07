@@ -1,2 +1,21 @@
 @import "../../../../variables.scss";
 
+.react-select__multi-value__label{
+    display: inline-block;
+    width: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip
+}
+
+.react-select__multi-value:first-of-type .react-select__multi-value__label{
+    width: fit-content;
+}
+
+.react-select__multi-value .react-select__multi-value__label::before{
+    content: '+1';
+}
+
+.react-select__multi-value:first-of-type .react-select__multi-value__label::before{
+    content: '';
+}

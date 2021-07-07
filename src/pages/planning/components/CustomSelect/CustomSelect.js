@@ -22,6 +22,8 @@ function CustomSelect({ optionsData }) {
             placeholder='Все'
             components={{ DropdownIndicator }}
             isClearable={false}
+            hideSelectedOptions={false}
+            classNamePrefix="react-select"
         />
     );
 }
@@ -79,21 +81,22 @@ const customStyles = {
         padding: 0,
         paddingLeft: 16,
         paddingRight: 16,
-        marginBottom: 20,
-        color: state.isFocused ? '#1071FF' : 'black',
-        backgroundColor: state.isFocused && 'transparent'
-      }),
-      menu: (provided, state) => ({
+        paddingTop: 10,
+        paddingBottom: 10,
+        color: state.isSelected ? '#1071FF' :'rgba(0, 0, 0, 0.87)',
+        backgroundColor: state.isFocused ? 'rgba(0, 0, 0, 0.05)' : 'transparent'
+    }),
+    menu: (provided, state) => ({
         ...provided,
         paddingTop: 18,
-      }),
-      multiValue: (provided, state) => ({
+    }),
+    multiValue: (provided, state) => ({
         ...provided,
         color: 'rgba(0, 0, 0, 0.54)',
         borderRadius: 24
-      }),
-      multiValueLabel: (provided, state) => ({
+    }),
+    multiValueLabel: (provided, state) => ({
         ...provided,
         color: 'rgba(0, 0, 0, 0.54)',
-      })
+    })
 }
