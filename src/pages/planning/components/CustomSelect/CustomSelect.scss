@@ -2,10 +2,7 @@
 
 .react-select__multi-value__label{
     display: inline-block;
-    width: 26px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: clip
+    width: 18px;
 }
 
 .react-select__multi-value:first-of-type .react-select__multi-value__label{
@@ -13,7 +10,7 @@
 }
 
 .react-select__multi-value .react-select__multi-value__label::before{
-    content: '+1';
+    content: '+1 ';
 }
 
 .react-select__multi-value:first-of-type .react-select__multi-value__label::before{

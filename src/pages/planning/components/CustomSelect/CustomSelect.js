@@ -98,5 +98,6 @@ const customStyles = {
     multiValueLabel: (provided, state) => ({
         ...provided,
         color: 'rgba(0, 0, 0, 0.54)',
+        textOverflow: 'clip'
     })
 }
