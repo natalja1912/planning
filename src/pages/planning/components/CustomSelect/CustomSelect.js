@@ -62,8 +62,7 @@ const customStyles = {
     }),
     valueContainer: (provided, state) => ({
         ...provided,
-        padding: 0,
-        borderRadius: 24
+        padding: 0
     }),
     indicatorSeparator: (provided, state) => ({
         ...provided,
@@ -82,10 +81,19 @@ const customStyles = {
         paddingRight: 16,
         marginBottom: 20,
         color: state.isFocused ? '#1071FF' : 'black',
-        backgroundColor: state.isFocused && 'transparent',
+        backgroundColor: state.isFocused && 'transparent'
       }),
       menu: (provided, state) => ({
         ...provided,
         paddingTop: 18,
       }),
+      multiValue: (provided, state) => ({
+        ...provided,
+        color: 'rgba(0, 0, 0, 0.54)',
+        borderRadius: 24
+      }),
+      multiValueLabel: (provided, state) => ({
+        ...provided,
+        color: 'rgba(0, 0, 0, 0.54)',
+      })
 }
