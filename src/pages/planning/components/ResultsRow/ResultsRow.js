@@ -30,7 +30,7 @@ function ResultsRow({ data }) {
                     <div className="table__icon"><Image.Process /></div>
                     <p className={`table__text ${!data.active && `table__text_inactive`}`}>
                         {data.progress}</p></div>
-                <button className="table__btn" onClick={handleClick}><Image.DottedLine /></button>
+                <button className="table__btn" onMouseEnter={handleClick} onClick={handleClick}><Image.DottedLine /></button>
 
                 <Overlay
                     show={show}
